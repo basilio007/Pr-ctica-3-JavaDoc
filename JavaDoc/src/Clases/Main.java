@@ -3,6 +3,9 @@ package Clases;
 public class Main {
 
 	public static void main(String[] args) {
+		/**
+		 * creacion y llamada a las clases anteriores
+		 */
 		
 		 Coche car = new Coche("Range Rover", 4, "deportivo");
 	        System.out.println("Marca: " + car.getNombre());
@@ -14,6 +17,10 @@ public class Main {
 	        //System.out.println("El coche tiene: " + persona.calc);
 	        
 	        System.out.println();
+	        
+	        /**
+	         * la ecepcion concatenada con el mensaje de la clase Vehiculo
+	         */
 
 	        try {
 	        	car.lanzarExcepcion();
