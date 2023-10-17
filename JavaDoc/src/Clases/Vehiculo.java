@@ -5,7 +5,7 @@ package Clases;
  * @author alumnat
  *
  */
-public class Estudiante  extends Coche{
+public class Vehiculo  extends Coche{
 	
 	 private float aceleracion;
 	 
@@ -16,10 +16,14 @@ public class Estudiante  extends Coche{
 	  * @param carrera
 	  */
 	 
-	    public Estudiante(String marca, int numero_puertas,String tipo, float aceleracion) {
+	    public Vehiculo(String marca, int numero_puertas,String tipo, float aceleracion) {
 	        super(marca, numero_puertas, tipo);
 	        this.aceleracion = aceleracion;
 	    }
+	    /**
+	     * los seter y geters
+	     * @return
+	     */
 	    
 	    public float getVelocida() {
 	        return aceleracion;
@@ -28,13 +32,16 @@ public class Estudiante  extends Coche{
 	    public void setVelocida(int aceleracion) {
 	        this.aceleracion = aceleracion;
 	    }
+	    /**
+	     * las dos funciones
+	     */
 	    
-	    public void estudiar() {
-	        System.out.println("El" + marca + " pasa de 0 a 100 en " + aceleracion);
+	    public void tiempoaceleracion() {
+	        System.out.println("El " + marca + " pasa de 0 a 100 en " + aceleracion +" segundos");
 	    }
 	    
-	    public void tomarExamenes() {
-	        System.out.println("El "+ marca + " es mas rapido que " + marca);
+	    public void Ddeterminacion() {
+	        System.out.println("El "+ marca + " es mas rapido");
 	    }
 
 }
